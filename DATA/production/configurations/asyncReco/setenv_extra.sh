@@ -524,6 +524,7 @@ fi
 # ad-hoc settings for MCH
 if [[ $BEAMTYPE == "pp" ]]; then
   export CONFIG_EXTRA_PROCESS_o2_mch_reco_workflow+=";MCHTracking.chamberResolutionX=0.4;MCHTracking.chamberResolutionY=0.4;MCHTracking.sigmaCutForTracking=7;MCHTracking.sigmaCutForImprovement=6"
+  export CONFIG_EXTRA_PROCESS_o2_mch_align_record_workflow+=";MCHTracking.chamberResolutionX=0.4;MCHTracking.chamberResolutionY=0.4;MCHTracking.sigmaCutForTracking=7;MCHTracking.sigmaCutForImprovement=6"
 fi
 
 # possibly adding calib steps as done online
